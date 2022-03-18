@@ -39,9 +39,9 @@ documento.addEventListener('mousemove', textBox, false) // desabilitando o mouse
     var wh = window.innerHeight;
     return (px*100)/wh;}
 
-    var caixa = document.getElementById('textBox')
-    function bemvindo() { caixa.classList.add('contatos') };
-    bemvindo();
+    var caixa = document.getElementById('textBox') // criou variavel da caixa de texto
+    function bemvindo() { caixa.classList.add('contatos') }; // criou função para chamar a caixa de texto com a escrita "contatos"
+    bemvindo(); // usando a função criada
 
     var texto = document.createElement('a');
     caixa.appendChild(texto);
