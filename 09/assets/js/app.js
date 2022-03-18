@@ -6,7 +6,7 @@ function closesidebar() { lsidebar.classList.add('l-sidebar--close') }; // vari�
 closesidebar(); // usando a função criada
 
 function lsidebarOpenClose() { // criou a função de abrir e fechar menu
-    var aux = lsidebar.classList[1]; // função: criou variavel que une o menu com a (??)
+    var aux = lsidebar.classList[1]; // função: criou variavel que une o menu com a (??) ******
     if (aux == "l-sidebar--close") { // usando condicional "se" --- se menu estiver fechado,
         lsidebar.classList.remove('l-sidebar--close'); //  remova a classe de fechar menu
         lsidebar.classList.add('l-sidebar--open'); // e adicione a variavel de abrir menu
@@ -39,21 +39,21 @@ documento.addEventListener('mousemove', textBox, false) // desabilitando o mouse
     var wh = window.innerHeight;
     return (px*100)/wh;}
 
-    var caixa = document.getElementById('textBox') // criou variavel da caixa de texto
+    var caixa = document.getElementById('textBox') // criou variavel da caixa de texto e chamou de "textbox"
     function bemvindo() { caixa.classList.add('contatos') }; // criou função para chamar a caixa de texto com a escrita "contatos"
     bemvindo(); // usando a função criada
 
-    var texto = document.createElement('a');
-    caixa.appendChild(texto);
+    var texto = document.createElement('a'); // criou a variavel texto e chamou de "a"
+    caixa.appendChild(texto); // vinculou a caixa de texto com o texto
 
-function textBox(evento) {
+function textBox(evento) { // criou uma função para a interação da caixa de texto
     
-    var auxtext = caixa.classList[0]
-    var aux = vh(evento.pageY);
-    var aux2 = document.createTextNode('Bem Vindo!');
-    var aux3 = document.createTextNode('Sobre mim!');
-    var aux4 = document.createTextNode('Contatos');
-    if (aux < 100 && auxtext != 'bemvindo') {
+    var auxtext = caixa.classList[0]; // função: criou variavel que une o menu com a (??) *****
+    var aux = vh(evento.pageY); // creio que seja cada página que aparece conforme rolagem *****
+    var aux2 = document.createTextNode('Bem Vindo!'); // criou texto "Bem vindo" para a caixa
+    var aux3 = document.createTextNode('Sobre mim'); // criou texto "Sobre mim" para a caixa
+    var aux4 = document.createTextNode('Contatos'); // criou texto "Contatos" para a caixa
+    if (aux < 100 && auxtext != 'bemvindo') { // usou a condicional "se" -- se a rolagem da tela for até 100 e (??) escreva "Bem vindo!"
         caixa.removeChild(texto)
         caixa.classList.remove('sobremim')
         caixa.classList.remove('contatos')
